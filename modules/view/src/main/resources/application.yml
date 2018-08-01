@@ -1,0 +1,11 @@
+spring:
+    cloud:
+        stream:
+            bindings:
+                inputChannel:
+                   destination: stringBroadcast
+                   binder: kafka
+                   group: stringProducer
+
+server:
+  port: 8081
