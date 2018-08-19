@@ -14,6 +14,8 @@ public class GeneratorService
 
     public void generateString()
     {
-        outputChannel.send(new GenericMessage<String>("Hello cruel world"));
+        for(int i = 1; i <= 10; i++ ) {
+            outputChannel.send(new GenericMessage<String>("Hello cruel world"));
+        }
     }
 }
